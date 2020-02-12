@@ -2,3 +2,16 @@ $text-color: #333333;
 $bg: #2448cc;
 $blue: #0674ec;
 $white: #fff;
+
+@mixin Quicksand700 {
+  font-family: "Quicksand-Bold";
+  font-weight: 700;
+}
+@mixin Quicksand500 {
+  font-family: "Quicksand-Medium";
+  font-weight: 500;
+}
+@mixin Quicksand400 {
+  font-family: "Quicksand-Regular";
+  font-weight: 400;
+}
