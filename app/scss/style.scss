@@ -109,21 +109,22 @@
 
   .menu__list {
     text-transform: uppercase;
-
-    a {
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 42px;
-      color: $text-color;
-
-      &:hover {
-        color: lighten($text-color, 30%);
+    display: flex;
+    li {
+      & + li {
+          margin-left: 35px;
       }
-
-      &+a {
-        margin-left: 35px;
+      a {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 42px;
+        color: $text-color;
+        transition: all .3s;
+        &:hover {
+          color: lighten($text-color, 30%);
+        } 
       }
-    }
+    }  
   }
 
   .search {
