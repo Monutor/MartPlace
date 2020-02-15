@@ -12,5 +12,6 @@ $(function () {
     nextArrow: '<button class="next slick-arrow"><img src="images/slider/chevron-right.png" alt=""></button>',
    });
 
+   var mixer = mixitup('.release-products__items');
 
 });

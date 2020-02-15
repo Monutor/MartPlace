@@ -35,9 +35,4 @@ body {
   color: $text-color;
 }
 
-.clearfix::after, .clearfix::before { 
-  content: ""; 
-  clear: both; 
-  display: block; 
-}
 
