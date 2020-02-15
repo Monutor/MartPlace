@@ -5,6 +5,7 @@ $(function () {
     rating: 4.5,
     starWidth: "14px",
     readOnly: true,
+    normalFill: "#fff"
   });
 
   $('.box-slider').slick({

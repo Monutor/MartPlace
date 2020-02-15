@@ -63,11 +63,14 @@
     margin-right: 42px;
 
     a {
+      position: relative;
       &:nth-child(2) {
         margin: 0 34px;
       }
     }
   }
+
+  
 
   &__account {
     .avatar {
@@ -151,7 +154,7 @@
         border: none;
         @include button-fon;
         box-shadow: none;
-        padding: 12px 27px;
+        padding: 11px 27px;
         top: 0;
         right: 0;
         cursor: pointer;
@@ -627,12 +630,17 @@
 .release-products__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -20px;
+  
 }
 
 .release-products__item {
   max-width: 360px;
+  flex: 1 0 calc((100% / 3) - 20px);
+  max-width: calc((100% / 3) - 20px);
   margin-bottom: 30px;
+  margin-left: 20px;
+  width: 100%;
 }
 
 .slider__item-img {
@@ -672,6 +680,10 @@
   }
   .sell {
     margin-left: auto;
+  }
+  .rate-star {
+    margin-left: 15px;
+    
   }
 }
 
