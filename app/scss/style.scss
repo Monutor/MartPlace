@@ -739,7 +739,8 @@
   justify-content: space-between;
   text-align: center;
 }
-span, .item__number {
+
+.item__number--yellow {
   color: #feb71d;
 }
 .item__number--blue {
@@ -751,7 +752,6 @@ span, .item__number {
 .item__number--red {
   color: #ff6a6d;
 }
-
 
 .fun-fact__item {
   span {
@@ -769,20 +769,87 @@ span, .item__number {
 
 }
 
+.why-choose {
+  padding: 120px 0;
+}
+
+.why-choose__inner-title {
+  text-align: center;
+  .title {
+    font-size: 36px;
+    padding-bottom: 30px;
+    span {
+      color: $blue;
+    }
+    // 700
+  }
+  .text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.why-choose__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.why-choose_inner-item {
+  margin-top: 60px;
+  max-width: 360px;
+  text-align: center;
+  padding: 40px 35px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+.why-choose__item {
+  position: relative;
+  .number {
+    font-size: 48px;
+    display: block;
+    position: absolute;
+    color: rgba(#5c87f8, .2);
+    top: -15px;
+    left: -15px;
+  }
+}
+
+  .lnr {
+    font-size: 60px;
+  }
+  
+  .lnr-license {
+    color: $blue;
+  }
+  .lnr-magic-wand {
+    color: #7f4ec2;
+  }
+
+  .lnr-lock {
+    color: #77de51;
+  }
+
+  .lnr-chart-bars {
+    color: #feb71d;
+  }
+
+  .lnr-leaf {
+    color: #58c9e9;
+  }
+
+  .lnr-phone {
+    color: #ff6a6d;
+  }
 
 
+.item__title {
+  font-size: 24px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// end release-products
