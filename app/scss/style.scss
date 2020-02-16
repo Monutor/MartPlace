@@ -729,6 +729,45 @@
 
 
 
+.fun-fact {
+  background-color: #212225;
+}
+
+.fun-fact__items {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+span, .item__number {
+  color: #feb71d;
+}
+.item__number--blue {
+  color: #58c9e9;
+}
+.item__number--green {
+  color: #77de51;
+}
+.item__number--red {
+  color: #ff6a6d;
+}
+
+
+.fun-fact__item {
+  span {
+    font-size: 48px;
+  }
+  .item__number {
+    font-size: 36px;
+    padding: 50px 0 25px;
+  }
+
+  .item__text {
+    font-size: 18px;
+    color: #fff;
+  }
+
+}
 
 
 
