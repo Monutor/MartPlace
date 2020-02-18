@@ -1,6 +1,7 @@
 @import 'vars';
-@import 'global';
 @import 'fonts';
+@import 'global';
+
 
 
 // start header
@@ -47,7 +48,7 @@
 
   &__btn {
     font-size: 14px;
-    margin-right: 50px;
+    // margin-right: 50px;
 
     a {
       @include button-fon;
@@ -61,17 +62,44 @@
 
   &__icons {
     align-self: center;
-    margin-right: 42px;
+    margin: 0 50px;
+    display: flex;
+    .lnr {
+      font-size: 20px;
+    }
 
-    a {
+    .alarm-box, .cart-box, .envelope-box {
       position: relative;
-      &:nth-child(2) {
-        margin: 0 34px;
-      }
+      margin-left: 35px;
+    }
+
+    .alarm-box {
+      margin-left: 0;
+    }
+
+    .alarm-number, .cart-number, .envelope-number {
+      position: absolute;
+      text-align: center;
+      line-height: 23px;
+      color:#fff;
+      width: 22px;
+      height: 22px;
+      top: -12px;
+      left: 12px;
+      border-radius: 50%;
+      font-size: 14px;
+    }
+
+    .alarm-number {
+      background-color: #ff6a6c;
+    }
+    .cart-number { 
+      background-color: $blue;
+    }
+    .envelope-number {
+      background-color: #62d03b;
     }
   }
-
-  
 
   &__account {
     .avatar {
@@ -80,7 +108,6 @@
 
     .user {
       line-height: 22px;
-
       &__name {
         a {
           font-size: 16px;
@@ -155,10 +182,14 @@
         border: none;
         @include button-fon;
         box-shadow: none;
-        padding: 11px 27px;
+        padding: 0 27px;
         top: 0;
         right: 0;
+        bottom: 0;
         cursor: pointer;
+        span {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -182,6 +213,7 @@
       margin: 0 auto;
       line-height: 70px;
       font-size: 60px;
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
       @include Quicksand700;
 
       span {
@@ -206,6 +238,7 @@
         border: 1px solid $white;
         border-radius: 50px;
         color: $white;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
         transition: all .3s ease;
 
         &:hover {
@@ -213,7 +246,7 @@
           color: $blue;
         }
 
-        &  a {
+        & + a {
           margin-left: 30px;
         }
       }
@@ -409,11 +442,16 @@
 }
 
 .prev.slick-arrow {
-  right: 100px;
+  right: 95px
 }
 
 .next.slick-arrow {
   right: 45px;
+}
+
+.lnr-chevron-left::before, .lnr-chevron-right::before {
+  font-size: 14px;
+  color: $white;
 }
 
 
@@ -443,8 +481,7 @@
   .content-title {
     @include Quicksand500;
     font-size: 24px;
-    padding-top: 30px;
-    
+    padding-top: 30px; 
   }
   .content-text {
     display: flex;
@@ -664,7 +701,7 @@
   border-bottom-left-radius: 6px;
 }
 
-.release-products__item .content-title {
+.slider__content-title {
   font-size: 20px;
   @include Quicksand500;
   padding-top: 0px;
@@ -825,11 +862,12 @@
     top: -15px;
     left: -15px;
   }
-}
-
   .lnr {
     font-size: 60px;
   }
+}
+
+ 
   
   .lnr-license {
     color: $blue;

@@ -9,8 +9,8 @@ $(function () {
   });
 
   $('.box-slider').slick({
-    prevArrow: '<button class="prev slick-arrow"><img src="images/slider/chevron-left.png" alt=""></button>',
-    nextArrow: '<button class="next slick-arrow"><img src="images/slider/chevron-right.png" alt=""></button>',
+    prevArrow: '<button class="prev slick-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="next slick-arrow"><span class="lnr lnr-chevron-right"></span></button>',
    });
 
    var mixer = mixitup('.release-products__items');
@@ -18,8 +18,8 @@ $(function () {
    
 
    $('.follow__items').slick({
-    prevArrow: '<button class="prev slick-arrow"><img src="images/slider/chevron-left.png" alt=""></button>',
-    nextArrow: '<button class="next slick-arrow"><img src="images/slider/chevron-right.png" alt=""></button>',
+    prevArrow: '<button class="prev slick-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="next slick-arrow"><span class="lnr lnr-chevron-right"></span></button>',
     slidesToShow: 3,
     variableWidth: true,
    });
