@@ -1526,6 +1526,9 @@
     }
     &-search {
      padding: 35px 0;
+     .form {
+       width: 500px;
+     }
     }
     .breadcrumbs__list {
       padding-bottom: 30px;
