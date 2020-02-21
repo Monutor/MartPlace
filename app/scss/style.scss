@@ -1,5 +1,5 @@
-@import 'vars';
 @import 'fonts';
+@import 'vars';
 @import 'global';
 
 
@@ -46,16 +46,12 @@
     align-items: center;
   }
 
-  &__btn {
+  &__btn-link {
     font-size: 14px;
-
-    a {
-      @include button-fon;
-      transition: all .3s ease;
-
-      &:hover {
-        background-color: darken($blue, 15%);
-      }
+    @include button-background;
+    transition: all .3s ease;
+    &:hover {
+      background-color: darken($blue, 15%);
     }
   }
 
@@ -188,7 +184,7 @@
     button {
       position: absolute;
       border: none;
-      @include button-fon;
+      @include button-background;
       box-shadow: none;
       padding: 0 27px;
       top: 0;
@@ -240,7 +236,7 @@
     &-btn {
       font-size: 16px;
 
-      a {
+      .btn-link {
         padding: 12px 30px !important;
         background-color: transparent;
         border: 1px solid $white;
@@ -254,7 +250,7 @@
           color: $blue;
         }
 
-        &+a {
+        & + .btn-link {
           margin-left: 30px;
         }
       }
@@ -341,7 +337,7 @@
 
     button {
       border: none;
-      @include button-fon;
+      @include button-background;
       box-shadow: none;
       border-radius: 4px;
       width: 200px;
@@ -470,7 +466,7 @@
   flex: 0 0 auto;
   max-width: 555px;
   width: 100%;
-  background-image: -moz-linear-gradient(180deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+  background-image: linear-gradient(180deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,7 +569,7 @@
 
     a {
       @include size15;
-      @include button-fon;
+      @include button-background;
       box-shadow: none;
       padding: 4px 20px;
       border-radius: 50px;
@@ -776,7 +772,7 @@
   padding-top: 23px;
 
   a {
-    @include button-fon;
+    @include button-background;
     background-color: rgba($blue, .2);
     box-shadow: none;
     padding: 4px 18px;
@@ -807,7 +803,7 @@
 
   button {
     border: none;
-    @include button-fon;
+    @include button-background;
   }
 }
 
@@ -1021,7 +1017,7 @@
     }
 
     a {
-      @include button-fon;
+      @include button-background;
       margin-bottom: 100px;
       background-color: #fff;
       color: $blue;
@@ -1114,7 +1110,7 @@
   padding-bottom: 120px;
 
   &-link {
-    @include button-fon;
+    @include button-background;
     padding: 15px 35px;
     border-radius: 50px;
     font-size: 16px;
@@ -1285,7 +1281,7 @@
   }
 
   &__button-link {
-    @include button-fon;
+    @include button-background;
     background-color: $white;
     padding: 18px 45px;
     border-radius: 50px;

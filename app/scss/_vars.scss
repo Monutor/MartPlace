@@ -37,7 +37,7 @@ $white: #fff;
   }
 }
 
-@mixin button-fon {
+@mixin button-background {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
   background-color: $blue;
   padding: 10px 18px;
