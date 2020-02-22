@@ -52,6 +52,35 @@ $(function () {
     $('.form').slideToggle(800);
   })
 
+  $('.user__name').click(function () {
+    $('.user__menu').slideToggle(800);
+  })
+
+  $('.lnr-envelope').click(function () {
+    $('.envelope__menu').slideToggle(800);
+  })
+
+  $('.lnr-alarm').click(function () {
+    $('.alarm__menu').slideToggle(800);
+  })
+
+  $('.lnr-cart').click(function () {
+    $('.cart__menu').slideToggle(800);
+  })
+
+  $('.home__menu').click(function () {
+    $('.menu__dropdown-home').slideToggle(800);
+  })
+  
+  $('.wordpress__menu').click(function () {
+    $('.menu__dropdown-wordpress').slideToggle(800);
+  })
+  
+  $('.page__menu').click(function () {  
+    $('.page__menu-drop').slideToggle(800);
+  })
+
+
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,
