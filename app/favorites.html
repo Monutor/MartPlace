@@ -22,6 +22,9 @@
                 <img src="images/Logo.png" alt="Logo">
                 <div class="logo-text">Mart<span>Place</span></div>
               </a>
+              <div class="header__profie-icon">
+                <i class="fas fa-user-alt" style="font-size: 40px;"></i>
+              </div>
               <div class="header__info">
                 <div class="header__btn">
                   <a href="#" class="header__btn-link">Become a Seller</a>
@@ -220,6 +223,7 @@
         <div class="header__menu">
           <div class="container">
             <div class="header__menu-inner">
+              <div class="menu__btn"><span class="lnr lnr-menu"></span></div>
               <nav class="menu">
                 <ul class="menu__list">
                   <li>
@@ -335,392 +339,220 @@
           </div>
         </div>
       </header>
-      <section class="themes">
+      <div class="breadcrumbs">
         <div class="container">
-          <div class="themes__inner">
-            <div class="themes__inner-title">
-              <span>4,572</span> wordpress themes, made with love
-            </div>
-            <div class="themes__inner-search search">
-              <form action="#" class="form">
-                <input type="search" placeholder="Search product here...">
-                <button type="submit">Search</button>
-              </form>
-            </div>
-            <div class="themes__inner-breadcrumbs breadcrumbs">
-              <ul class="breadcrumbs__list">
-                <li><a href="#" class="breadcrumbs__link">Home</a></li>
-                <li class="active">Category Page Grid</li>
-              </ul>
-            </div>
-          </div>
+          <ul class="breadcrumbs__list">
+            <li><a href="#" class="breadcrumbs__link">Home</a></li>
+            <li class="active">Favorites</li>
+          </ul>
+          <div class="breadcrumbs__title">Your Favorites</div>
         </div>
-      </section>
-      <section class="filter-bar">
+      </div>
+      <section class="filter-bar favorites-bar">
         <div class="container">
-          <div class="filter-bar__inner">
-            <div class="filter-bar__text">
-              <div class="new-products active">New Products</div>
-              <div class="popular-products">Popular Products</div>
+          <div class="filter-bar__inner favorites-bar__inner">
+            <div class="filter-bar__title favorites-bar__title">
+              <span>570</span> Favourites Found
             </div>
-            <div class="filter-bar__inputs">
+            <div class="filter-bar__inputs favorites-bar__inputs">
+              <div class="buttons__filter favorites-bar__filter">
+                <span>Filter by</span>
+                <div class="filter__box">
+                  <div class="buttons__filter-menu">
+                    <ul class="filter__list">
+                      <a href="#">
+                        <li>Trending items</li>
+                      </a>
+                      <a href="#">
+                        <li>Best seller</li>
+                      </a>
+                      <a href="#">
+                        <li>Best rating</li>
+                      </a>
+                      <a href="#">
+                        <li>Low price</li>
+                      </a>
+                      <a href="#">
+                        <li>High price</li>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <select class="select-price select">
                 <option>Price: Low to High</option>
                 <option>Price: Low to High</option>
                 <option>Price: Low to High</option>
                 <option>Price: Low to High</option>
               </select>
-              <select class="select-items select">
+              <select class="select-items favorites-bar__select select">
                 <option>12 Items Per Page</option>
                 <option>10 Items Per Page</option>
                 <option>8 Items Per Page</option>
               </select>
               <div class="box">
                 <button type="button" class="active"><img src="images/Icons/Grid.png" alt=""></button>
-                <button type="button"><img src="images/Icons/List.png" alt=""></button>
+                <button type="button" class="grid-list"><img src="images/Icons/List.png" alt=""></button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="page">
+      <section class="release-products">
         <div class="container">
-          <div class="page__inner">
-            <aside class="page-aside">
-              <div class="categiries margin-item">
-                <div class="categiries__inner box-inner">
-                  <div class="categiries__inner-title aside-title">
-                    Categories
-                  </div>
-                  <ul class="categiries__inner-list aside-list">
-                    <li><a href="#">Wordpress</a> <span>35</span></li>
-                    <li><a href="#">Landing Page</a><span>45</span></li>
-                    <li><a href="#">Psd Template</a><span>13</span></li>
-                    <li><a href="#">Plugins</a><span>08</span></li>
-                    <li><a href="#">HTML Template</a><span>34</span></li>
-                    <li><a href="#">Components</a><span>78</span></li>
-                    <li><a href="#">Joomla Template</a><span>26</span></li>
-                  </ul>
+          <div class="release-products__items">
+            <div class="products-slider__inner-slider release-products__item">
+              <div class="slider__item-img"></div>
+              <div class="slider__item-content">
+                <div class="slider__content-title">
+                  E-commerce Shopping Cart
                 </div>
-              </div>
-              <div class="filter margin-item">
-                <div class="filter__inner box-inner">
-                  <div class="filter__inner-title aside-title">
-                    Filter Products
+                <div class="content-text">
+                  <div class="author">
+                    <a href="#">Theme-Valley</a>
                   </div>
-                  <ul class="filter__inner-list aside-list">
-                    <li><a href="#">Wordpress</a></li>
-                    <li><a href="#">Landing Page</a></li>
-                    <li><a href="#">Psd Template</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li><a href="#">HTML Template</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="#">Joomla Template</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="pricing-range margin-item">
-                <div class="pricing-range__inner box-inner">
-                  <div class="pricing-range__inner-title aside-title">
-                    Categories
-                  </div>
-                  <form class="form">
-                    <input type="text" class="js-range-slider" name="my_range" value="">
-                    <button type="button" class="pricing-range__button">Search Update</button>
-                  </form>
-                </div>
-              </div>
-            </aside>
-            <div class="page__items">
-              <div class="page__item">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
+                  <div class="category">
+                    Plugin
                   </div>
                 </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
-                  </div>
+                <div class="content-intro  release-products__intro">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+                <div class="content-info release-products__info">
+                  <a href="#">$20</a>
+                  <span class="like">90</span>
+                  <span class="sell">246</span>
                 </div>
               </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
+            </div>
+            <div class="products-slider__inner-slider release-products__item">
+              <div class="slider__item-img"></div>
+              <div class="slider__item-content">
+                <div class="slider__content-title">
+                  E-commerce Shopping Cart
+                </div>
+                <div class="content-text">
+                  <div class="author">
+                    <a href="#">Theme-Valley</a>
                   </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
+                  <div class="category">
+                    Plugin
                   </div>
                 </div>
-              </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
-                  </div>
+                <div class="content-intro  release-products__intro">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+                <div class="content-info release-products__info">
+                  <a href="#">$20</a>
+                  <span class="like">90</span>
+                  <span class="sell">246</span>
                 </div>
               </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
+            </div>
+            <div class="products-slider__inner-slider release-products__item">
+              <div class="slider__item-img"></div>
+              <div class="slider__item-content">
+                <div class="slider__content-title">
+                  E-commerce Shopping Cart
+                </div>
+                <div class="content-text">
+                  <div class="author">
+                    <a href="#">Theme-Valley</a>
                   </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
+                  <div class="category">
+                    Plugin
                   </div>
                 </div>
-              </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
-                  </div>
+                <div class="content-intro  release-products__intro">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+                <div class="content-info release-products__info">
+                  <a href="#">$20</a>
+                  <span class="like">90</span>
+                  <span class="sell">246</span>
                 </div>
               </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
+            </div>
+            <div class="products-slider__inner-slider release-products__item">
+              <div class="slider__item-img"></div>
+              <div class="slider__item-content">
+                <div class="slider__content-title">
+                  E-commerce Shopping Cart
+                </div>
+                <div class="content-text">
+                  <div class="author">
+                    <a href="#">Theme-Valley</a>
                   </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
+                  <div class="category">
+                    Plugin
                   </div>
                 </div>
-              </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
-                  </div>
+                <div class="content-intro  release-products__intro">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+                <div class="content-info release-products__info">
+                  <a href="#">$20</a>
+                  <span class="like">90</span>
+                  <span class="sell">246</span>
                 </div>
               </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
+            </div>
+            <div class="products-slider__inner-slider release-products__item">
+              <div class="slider__item-img"></div>
+              <div class="slider__item-content">
+                <div class="slider__content-title">
+                  E-commerce Shopping Cart
+                </div>
+                <div class="content-text">
+                  <div class="author">
+                    <a href="#">Theme-Valley</a>
                   </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
+                  <div class="category">
+                    Plugin
                   </div>
                 </div>
-              </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
-                  </div>
+                <div class="content-intro  release-products__intro">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+                <div class="content-info release-products__info">
+                  <a href="#">$20</a>
+                  <span class="like">90</span>
+                  <span class="sell">246</span>
                 </div>
               </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
+            </div>
+            <div class="products-slider__inner-slider release-products__item">
+              <div class="slider__item-img"></div>
+              <div class="slider__item-content">
+                <div class="slider__content-title">
+                  E-commerce Shopping Cart
+                </div>
+                <div class="content-text">
+                  <div class="author">
+                    <a href="#">Theme-Valley</a>
                   </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
+                  <div class="category">
+                    Plugin
                   </div>
                 </div>
-              </div>
-              </div>
-              <div class="page__item">
-                <div class="page__item-inner">
-                <div class="page__item-img"></div>
-                <div class="page__item-content">
-                  <div class="page__item-title">
-                    Finance and Consulting 
-                    Business Theme
-                  </div>
-                  <div class="page__item-author author">
-                   <a href="#">Theme-Valley</a> 
-                  </div>
-                  <div class="page__item-box">
-                    <div class="page__item-rate"></div>
-                    <span class="page__item-sell">427</span>
-                  </div>
-                  <div class="page__item-price">
-                    <a href="#" class="price-link">$20</a> 
-                    <div class="page__item-category category">
-                      WordPress
-                    </div>
-                  </div>
+                <div class="content-intro  release-products__intro">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
                 </div>
-              </div>
+                <div class="content-info release-products__info">
+                  <a href="#">$20</a>
+                  <span class="like">90</span>
+                  <span class="sell">246</span>
+                </div>
               </div>
             </div>
           </div>
-          <ul class="page__pagination">
+          <ul class="page__pagination favorites__pagination">
             <li><a href="#" class="page__pagination-link page__pagination-left"></a></li>
             <li><span class="active">1</span></li>
             <li><a href="#" class="page__pagination-link">2</a></li>
@@ -729,7 +561,7 @@
             <li><a href="#" class="page__pagination-link page__pagination-right"></a></li>
           </ul>
         </div>
-      </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="footer__top">
@@ -849,7 +681,6 @@
       </div>
     </footer>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

@@ -58,19 +58,6 @@ $(function () {
       }
     },
   ]
-  
-  //   responsive: [
-  //     {
-  //     breakpoint: 1201,
-  //     settings: {
-  //       slidesToShow: 2,
-  //     },
-  //     breakpoint: 781,
-  //     settings: {
-  //       slidesToShow: 1
-  //     }
-  //   }
-  // ]
   });
 
   $('.button').click(function () {
@@ -79,63 +66,67 @@ $(function () {
 
   $('.categiries__inner-title').click(function () {
     $('.categiries__inner-list').slideToggle(800);
-  })
+  });
 
   $('.filter__inner-title').click(function () {
     $('.filter__inner-list').slideToggle(800);
-  })
+  });
+
+  $('.buttons__filter').click(function () {
+    $('.filter__box').slideToggle(800);
+  });
 
   $('.pricing-range__inner-title').click(function () {
     $('.form').slideToggle(800);
-  })
+  });
 
   $('.user__name').click(function () {
     $('.user__menu').slideToggle(800);
-  })
+  });
 
   $('.lnr-envelope').click(function () {
     $('.envelope__menu').slideToggle(800);
-  })
+  });
 
   $('.lnr-alarm').click(function () {
     $('.alarm__menu').slideToggle(800);
-  })
+  });
 
   $('.lnr-cart').click(function () {
     $('.cart__menu').slideToggle(800);
-  })
+  });
 
   $('.home__menu').click(function () {
     $('.menu__dropdown-home').slideToggle(800);
-  })
+  });
 
   $('.wordpress__menu').click(function () {
     $('.menu__dropdown-wordpress').slideToggle(800);
-  })
+  });
 
   $('.page__menu').click(function () {
     $('.page__menu-inner').fadeToggle(500);
-  })
+  });
 
   $('.menu__btn').click(function () {
     $('.menu').fadeToggle(500);
-  })
+  });
 
   $('.home__title').click(function () {
     $('.home__list').slideToggle(800);
-  })
+  });
 
   $('.dashboard__title').click(function () {
     $('.dashboard__list').slideToggle(800);
-  })
+  });
 
   $('.other-page__title').click(function () {
     $('.other-page__list').slideToggle(800);
-  })
+  });
 
   $('.header__profie-icon').click(function () {
     $('.header__info').slideToggle(200);
-  })
+  });
 
 
 
