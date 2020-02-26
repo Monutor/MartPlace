@@ -2552,4 +2552,27 @@
 
 //end login page
 
+//start error-404 page
+
+.error-404 {
+  &__wrapper {
+    text-align: center;
+  }
+  &__title {
+    font-size: 30px;
+    color: #000;
+    padding: 50px 0 40px;
+  }
+  &__btn {
+    margin-bottom: 100px;
+  }
+  &__link {
+    @include button-background;
+    padding: 15px 45px;
+    border-radius: 50px;
+  }
+}
+
+//end error-404 page
+
 @import 'media';

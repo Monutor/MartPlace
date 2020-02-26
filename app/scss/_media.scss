@@ -496,6 +496,11 @@
       }
     }
   }
+  .error-404__wrapper {
+    .error-404__img img {
+      width: 50%;
+    }
+  }
 }
 
 @media (max-width: 390px) {
@@ -583,7 +588,12 @@
   .authorization__login-wrapper {
     padding: 0px 15px;
   }
-
+  
+  .error-404__wrapper {
+    .error-404__title {
+      font-size: 25px;
+    }
+  }
 }
 
 @media (min-width: 540px) {
