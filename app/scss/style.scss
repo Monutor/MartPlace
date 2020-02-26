@@ -2003,31 +2003,31 @@
         width: 500px;
       }
     }
+  }
+}
 
-    .breadcrumbs__list {
-      padding-bottom: 30px;
+.breadcrumbs__list {
+  padding-bottom: 30px;
 
-      li {
-        display: inline-block;
+  li {
+    display: inline-block;
 
-        &::before {
-          content: '/';
-          margin: 0 5px;
-        }
-
-        &:first-child::before {
-          content: '';
-        }
-
-        .breadcrumbs__link {
-          color: $white;
-        }
-      }
-
-      .active {
-        color: #bfcad7;
-      }
+    &::before {
+      content: '/';
+      margin: 0 5px;
     }
+
+    &:first-child::before {
+      content: '';
+    }
+
+    .breadcrumbs__link {
+      color: $white;
+    }
+  }
+
+  .active {
+    color: #bfcad7;
   }
 }
 
@@ -2381,6 +2381,145 @@
 }
 
 //end section page
+
+
+
+//start login page
+
+.breadcrumbs {
+  background-image: linear-gradient(-90deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+  
+  &__list {
+    padding-bottom: 0;
+    padding-top: 60px;
+    li:before {
+      margin-left: 0;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    color: $white;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    @include Quicksand500;
+  }
+}
+
+.authorization {
+  background-color: #eff1f5;
+  &__wrapper {
+    padding: 70px 0 120px;
+  }
+}
+.authorization__login {
+  padding-top: 60px;
+  max-width: 556px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  &-wrapper {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  &-title {
+    font-size: 26px;
+    padding-bottom: 25px;
+    color: #000;
+  }
+  &-desc {
+    font-size: 16px;
+    color: #555;
+    padding-bottom: 30px;
+  }
+  &-inner {
+    padding: 25px 45px 55px;
+  }
+  .pass, .label {
+    display: block;
+  }
+  .label {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 15px;
+    @include Quicksand500;
+  }
+  .label-pass {
+    padding-top: 30px;
+  }
+
+  input:not(.checkbox) {
+    width: 445px;
+    padding: 15px 20px;
+    background-color: #f4f5f8;
+    border: none;
+    font-size: 16px;
+    color: #898f96;
+  }
+
+  .label-checkbox {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+  }
+  .checkbox {
+    display: none;
+    & + label {
+      font-size: 16px;
+      color: #555;
+    }
+  }
+  .fake-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $blue;
+    border: 1px solid $blue;
+    border-radius: 50%;
+    margin-right: 14px;
+    position: relative;
+    &::before {
+      content: '\f00c';
+      font-family: 'FontAwesome';
+      color: $white;
+      font-size: 12px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: .2s;
+    }
+  }
+  .checkbox:checked + .fake-checkbox::before {
+    opacity: 1;
+  }
+
+  &-link {
+    display: block;
+    @include button-background;
+    max-width: 150px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 14px 0px;
+    border-radius: 50px;
+  }
+  &-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #898f96;
+    a {
+      color: $bg;
+      transition: all .2s;
+      &:hover{
+        color: darken($bg, 10%);
+      }
+    }
+  }
+}
+
+//end login page
 
 @import 'media';
 

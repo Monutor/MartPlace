@@ -338,6 +338,14 @@
       margin: 15px 0;
     }
   }
+
+  .authorization__login-inner {
+    .form {
+      input {
+         width: 310px;
+      }
+    } 
+  }
 }
 
 @media (max-width: 480px) {
@@ -390,6 +398,17 @@
         margin-bottom: 10px;
       }
     }
+  }
+  .authorization__login-text {
+    flex-direction: column;
+  }
+  .authorization__login-inner {
+    padding-left: 30px;
+    .form {
+      input {
+         width: 230px;
+      }
+    } 
   }
 }
 
