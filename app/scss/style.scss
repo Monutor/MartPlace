@@ -343,7 +343,8 @@
       color: $blue;
       padding: 8px 10px;
       box-shadow: none;
-      &:hover{
+
+      &:hover {
         color: $white;
       }
     }
@@ -1479,7 +1480,8 @@
       padding-bottom: 50px;
     }
 
-    .title, .text {
+    .title,
+    .text {
       color: $white;
     }
 
@@ -2388,14 +2390,16 @@
 
 .breadcrumbs {
   background-image: linear-gradient(-90deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
-  
+
   &__list {
     padding-bottom: 0;
     padding-top: 60px;
+
     li:before {
       margin-left: 0;
     }
   }
+
   &__title {
     font-size: 30px;
     color: $white;
@@ -2407,10 +2411,12 @@
 
 .authorization {
   background-color: #eff1f5;
+
   &__wrapper {
     padding: 70px 0 120px;
   }
 }
+
 .authorization__login {
   padding-top: 60px;
   max-width: 556px;
@@ -2418,32 +2424,46 @@
   margin: 0 auto;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   border-radius: 4px;
+
   &-wrapper {
     text-align: center;
     border-bottom: 1px solid #ccc;
+    padding: 0 65px;
   }
+
   &-title {
     font-size: 26px;
     padding-bottom: 25px;
     color: #000;
   }
+
   &-desc {
     font-size: 16px;
     color: #555;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
+  
+  .register-desc {
+   max-width: 430px;
+   line-height: 28px;
+  }
+
   &-inner {
     padding: 25px 45px 55px;
   }
-  .pass, .label {
+
+  .pass,
+  .label {
     display: block;
   }
+
   .label {
     font-size: 16px;
     color: #000;
     padding-bottom: 15px;
     @include Quicksand500;
   }
+
   .label-pass {
     padding-top: 30px;
   }
@@ -2462,13 +2482,16 @@
     display: flex;
     align-items: center;
   }
+
   .checkbox {
     display: none;
-    & + label {
+
+    &+label {
       font-size: 16px;
       color: #555;
     }
   }
+
   .fake-checkbox {
     display: inline-block;
     width: 20px;
@@ -2478,6 +2501,7 @@
     border-radius: 50%;
     margin-right: 14px;
     position: relative;
+
     &::before {
       content: '\f00c';
       font-family: 'FontAwesome';
@@ -2491,7 +2515,8 @@
       transition: .2s;
     }
   }
-  .checkbox:checked + .fake-checkbox::before {
+
+  .checkbox:checked+.fake-checkbox::before {
     opacity: 1;
   }
 
@@ -2504,15 +2529,21 @@
     padding: 14px 0px;
     border-radius: 50px;
   }
+  .register-link {
+    margin-top: 30px;
+  }
+
   &-text {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
     color: #898f96;
+
     a {
       color: $bg;
       transition: all .2s;
-      &:hover{
+
+      &:hover {
         color: darken($bg, 10%);
       }
     }
@@ -2522,4 +2553,3 @@
 //end login page
 
 @import 'media';
-

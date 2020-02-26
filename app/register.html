@@ -23,7 +23,7 @@
                 <div class="logo-text">Mart<span>Place</span></div>
               </a>
               <div class="header__profie-icon">
-                <i class="fas fa-user-alt" style="font-size: 40px;"></i>
+                <i class="fas fa-user-alt"  style="font-size: 40px;"></i>
               </div>
               <div class="header__info">
                 <div class="header__btn">
@@ -341,43 +341,40 @@
       </header>
       <div class="breadcrumbs">
         <div class="container">
-          <ul class="breadcrumbs__list">
-            <li><a href="#" class="breadcrumbs__link">Home</a></li>
-            <li class="active">Login</li>
-          </ul>
-          <div class="breadcrumbs__title">Login</div>
+        <ul class="breadcrumbs__list">
+          <li><a href="#" class="breadcrumbs__link">Home</a></li>
+          <li class="active">Login</li>
+        </ul>
+        <div class="breadcrumbs__title">Login</div>
         </div>
       </div>
       <section class="authorization">
         <div class="container">
           <div class="authorization__wrapper">
-            <div class="authorization__login">
-              <div class="authorization__login-wrapper">
-                <div class="authorization__login-title">Welcome Back</div>
-                <div class="authorization__login-desc">You can sign in with your username</div>
-              </div>
-              <div class="authorization__login-inner">
-                <form action="#" class="form">
-                  <label for="username" class="label label-name">Username</label><input type="text" id="username"
-                    placeholder="Enter your username...">
-                  <label for="pass" class="label label-pass">Password</label><input type="password" id="pass"
-                    class="pass" placeholder="Enter your password...">
-                  <label for="checkbox" class="label-checkbox">
-                    <input type="checkbox" class="checkbox" id="checkbox">
-                    <span class="fake-checkbox"></span>
-                    <span class="remember">Remember me</span>
-                  </label>
-                  <a href="#" class="authorization__login-link">Login Now</a>
-                </form>
-                <div class="authorization__login-text">
-                  <div class="lost-pass">Lost your <a href="#">username</a> or <a href="#">password</a></div>
-                  <div class="dont-accout">Don`t have an <a href="#">account</a></div>
-                </div>
-              </div>
-            </div>
+        <div class="authorization__login">
+        <div class="authorization__login-wrapper">
+          <div class="authorization__login-title">Create Your Account</div>
+          <div class="authorization__login-desc register-desc">Please fill the following fields with appropriate information
+            to register a new MartPlace account.</div>
+        </div>
+        <div class="authorization__login-inner">
+          <form action="#" class="form">
+            <label for="yourname" class="label label-name">Your Name</label><input type="text" id="yourname" placeholder="Enter your name..." required>
+            <label for="email" class="label label-pass">Email Address</label><input type="email" id="email" class="pass" placeholder="Enter your email address" required>
+            <label for="username" class="label label-pass">Username</label><input type="text" id="username" class="pass" placeholder="Enter your Username..." required>
+            <label for="pass" class="label label-pass">Password</label><input type="password" id="pass" class="pass" placeholder="Enter your password..." required>
+            <label for="confirm" class="label label-pass">Confirm Password</label><input type="password" id="confirm" class="pass" placeholder="Enter your password..." required>
+            <a href="#" class="authorization__login-link register-link">Register Now</a>
+          </form>
+          <div class="authorization__login-text">
+            <div class="lost-pass">Lost your <a href="#">username</a> or <a href="#">password</a></div>
+            <div class="dont-accout">Don`t have an <a href="#">account</a></div>
           </div>
         </div>
-      </section>
+        </div>
+        </div>
+        </div>
+    </section>
     </div>
     <footer class="footer">
       <div class="footer__top">
