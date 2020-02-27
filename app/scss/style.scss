@@ -2396,6 +2396,25 @@
 
 .breadcrumbs {
   background-image: linear-gradient(-90deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+  min-height: 280px;
+
+  .wrapper {
+    text-align: center;
+  }
+  .works__list {
+    padding-bottom: 30px;
+  }
+  
+  .contact__head {
+    padding-top: 110px;
+    padding-bottom: 20px;
+    @include Quicksand500;
+  }
+
+  .contact__text {
+    font-size: 20px;
+    color: $white;
+  }
 
   &__list {
     padding-bottom: 0;
@@ -2412,6 +2431,16 @@
     padding-top: 20px;
     padding-bottom: 55px;
     @include Quicksand500;
+  }
+  &__head {
+    padding-top: 75px;
+    font-size: 30px;
+    color: #f3f3f8;
+    line-height: 50px;
+    span {
+      display: block;
+      @include Quicksand500;
+    }
   }
 }
 
@@ -2699,5 +2728,216 @@
 }
 
 //end Terms & Conditions page
+
+
+//start works page 470
+.create {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    padding: 100px 0;
+    &:nth-child(2){
+      background-color: #eff1f5;
+    }
+  }
+  &__desc {
+    max-width: 470px;
+    &-title {
+      font-size: 30px;
+      color: #000;
+      padding-top: 35px;
+    }
+    &-text {
+      font-size: 16px;
+      color: #555;
+      padding: 40px 0 30px;
+      line-height: 30px;
+    }
+    &-link {
+      @include button-background;
+      padding: 14px 30px;
+      border-radius: 50px;
+      background-color: #fff;
+      color: $blue;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+  .upload__item {
+    flex-direction: row-reverse;
+  }
+}
+
+.upload {
+  background-color: #eff1f5;
+}
+
+.join {
+  background-image: linear-gradient(-90deg, #0d3ef2 0%, #2d2fc7 46%, #4c1f9c 100%);
+  &__inner {
+    padding: 110px 0;
+    text-align: center;
+    &-title {
+      font-size: 36px;
+      color: $white;
+    }
+    &-text {
+      padding: 25px 0 53px;
+      font-size: 18px;
+      color: #e7e7e7;
+    }
+    &-link {
+      @include button-background;
+      padding: 14px 30px;
+      border-radius: 50px;
+      background-color: #fff;
+      color: $blue;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}
+
+//end works page
+
+//start contact page
+
+.can-help {
+  background-color: #eff1f5;
+  padding-bottom: 120px;
+  &__wrapper {
+    padding-top: 120px;
+    text-align: center;
+  }
+  &__head {
+    font-size: 36px;
+    color: #000;
+    span {
+      color: $blue;
+    }
+  }
+  &__desc {
+    padding: 25px 0 50px;
+    max-width: 670px;
+    margin: 0 auto;
+    line-height: 28px;
+  }
+  &__inner {
+    padding-bottom: 50px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    // flex: 1 0 360px;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    text-align: center;
+    & + & {
+      margin-left: 30px;
+    }
+  }
+  &__icon {
+    font-size: 48px;
+    color: $blue;
+    padding-top: 50px;
+    .lnr-phone {
+      color: inherit;
+    }
+  }
+  &__title {
+    @include Quicksand500;
+    color: #000;
+    font-size: 20px;
+    padding-top: 45px;
+  }
+  &__text {
+    max-width: 240px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    padding: 30px 0 35px;
+  }
+  &__link {
+    display: block;
+    color: inherit;
+    transition: all .2s;
+    &:hover {
+      color: lighten(#555, 20%);
+    }
+  }
+  &__messages {
+    max-width: 1140px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108,111,115,0.1);
+    border-radius: 4px;
+    &-title {
+      padding: 60px 0 30px;
+      font-size: 24px;
+      text-align: center;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    &-wrapper {
+      margin: 0 auto;
+
+    }
+    &-form {
+      padding: 40px 0 60px;
+      text-align: center;
+    }
+    .messages-form__input {
+      min-width: 360px;
+      border: 1px solid #e7e7e7;
+      padding: 20px 0;
+      font-size: 16px;
+      color: #9e9e9e;
+      & + .messages-form__input{
+        margin-left: 30px;
+        margin-top: 30px;
+      }
+    }
+    .messages-form__name, .messages-form__subject {
+      padding-left: 50px;
+    }
+    .messages-form__email, .messages-form__phone {
+      padding-left: 20px;
+    }
+    .messages-form__button {
+      display: block;
+      margin: 0 auto;
+    }
+    .textarea {
+      margin: 30px 0;
+      min-height: 132px;
+      width: 755px;
+    }
+    input[type='number'] {
+      -moz-appearance:textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .messages-form__button {
+      @include button-background;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+//end contact page
 
 @import 'media';

@@ -55,6 +55,15 @@
       }
     }
   }
+  .can-help__inner {
+    // flex-direction: column;
+  }
+  .can-help__item {
+    margin-bottom: 15px;
+    & + .can-help__item {
+      margin-left: 0;
+    }
+  }
 }
 
 @media (max-width: 960px) {
@@ -194,6 +203,9 @@
       margin-left: 10px;
     }
   }
+  .create .upload__item {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 800px) {
@@ -221,8 +233,15 @@
       }
     }
   }
-
-
+  .can-help__item {
+    margin-bottom: 15px;
+  }
+  .can-help__messages .messages-form__input + .messages-form__input {
+    margin-left: 0;
+  }
+  .can-help__messages .textarea {
+    width: 725px;
+  } 
 }
 
 @media (max-width: 670px) {
@@ -279,7 +298,15 @@
       }
     }
   }
-
+  .can-help__messages .messages-form__name, .can-help__messages .messages-form__subject {
+    padding-left: 20px;
+  }
+  .messages-form__subject {
+    margin-top: 30px;
+  }
+  .can-help__messages .textarea {
+    width: 360px;
+  } 
 }
 
 @media (max-width: 580px) {
@@ -431,14 +458,15 @@
 @media (max-width: 480px) {
   .page__menu {
     &-drop {
-
       .home__list,
       .other-page__list {
         column-count: 1 !important;
       }
     }
   }
-
+  .create__img img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 440px) {
@@ -509,6 +537,9 @@
       width: 50%;
     }
   }
+  .can-help__messages .messages-form__input {
+    min-width: 90%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -574,6 +605,9 @@
       font-size: 18px;
     }
   }
+  .can-help__messages .textarea {
+    width: 325px;
+  } 
 }
 
 @media (max-width: 320px) {
@@ -602,6 +636,18 @@
       font-size: 25px;
     }
   }
+  .create__desc-title {
+    font-size: 25px;
+  }
+  .create__desc-btn {
+    text-align: center;
+  }
+  .create__desc-link {
+    display: block;
+  }
+  .can-help__messages .textarea {
+    width: 125px;
+  } 
 }
 
 @media (min-width: 540px) {
